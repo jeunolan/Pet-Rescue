@@ -1,0 +1,29 @@
+.main_block{
+    display:block;
+    outline: 1px;
+    outline-color: red;
+    outline-style: solid;
+}
+.foster_label{
+    font-size: 20px;
+    color: black;
+    outline-color: red;
+    outline-style: solid;
+    }
+
+.image_block{
+    display:inline-block;
+    outline-color: red;
+    outline-style: solid;
+}    
+.display_first_name{
+    display:inline-block;
+    outline-color: red;
+    outline-style: solid;
+    vertical-align: top;
+}
+.main_inline_block{
+    display:inline-block
+}
+
+

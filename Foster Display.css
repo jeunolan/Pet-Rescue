@@ -1,8 +1,8 @@
 .main_block{
-    display:block;
     outline: 1px;
     outline-color: red;
     outline-style: solid;
+    background-color: white;
 }
 .foster_label{
     font-size: 20px;
@@ -13,8 +13,9 @@
 
 .image_block{
     display:inline-block;
-    outline-color: red;
-    outline-style: solid;
+    border-radius: 50%;
+    background-color: white;
+    overflow:hidden;
 }    
 .display_first_name{
     display:inline-block;
@@ -23,7 +24,12 @@
     vertical-align: top;
 }
 .main_inline_block{
-    display:inline-block
+    display:inline-block;
 }
 
+.Foster_header{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+}
 

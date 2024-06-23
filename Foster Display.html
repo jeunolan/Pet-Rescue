@@ -29,12 +29,69 @@
    <div style="height: 300px;
    background-color: blue;">
    <!-- create form with user input-->
-    <form action="/url" method="get"></form>
+    <form action="results.html" method="get">
+    <div>    
+    <p3>Foster Program - New Volunteer Applicant</p3>
+    
+    <section class="section_bordered">
+        
         <h3>Name</h3> 
-        <label for="f_name"> First Name</label><input id = "f_name" name="First_Name">
-        <label for="m_initial"> Middle Initial</label><input id="m_initial" name = "Middle_initial">
-        <label for="l_name">Last Name</label><input id="l_name" name ="last_name">
-</form>
+        
+        <div class="form-group name">
+            <div style="display:block;">    
+                <label for ="title" >Title</label>
+            </div>
+            <div style="display:block;">
+                <select name="title" id="title"><
+                <optgroup>
+                    <option value="">Select...</option>
+                    <option value="Mr">Mr.</option>
+                    <option value="Ms">Ms.</option>
+                    <option value="Mrs">Mrs.</option>
+                </optgroup>
+                </select>
+            </div>
+        </div>    
+    </div>
+
+    <div>
+    <!--display first name and middle on the same line-->
+    <div style="display:inline-block;">
+
+        <!-- dispay label on top of textbox-->
+        <div style="display: block;">
+            <label for="f_name"> First Name</label>
+        </div>
+        <div sytle="display:block;">
+            <input type ="text" id = "f_name" name="First_Name" style ="height:20px; margin-right:50px;" required>
+        </div>
+    </div>    
+
+        <!-- display label on top of text box-->
+    <div style="display:inline-block;">    
+        <div style ="display:block;">
+            <label for="m_initial"> Middle Initial</label>
+        </div>
+        <div style="display:block;">
+            <input type = "text" id="m_initial" name = "Middle_initial">
+        </div>
+
+    </div>
+            <div style="display: block">
+                <label for="l_name">Last Name</label>
+            </div>
+            <div style="display:block">
+                <input type="text" id="l_name" name ="last_name" required>
+            </div>
+        <div style="display: inline-block;">
+            <label for="suffix">Suffix</label>
+            <input type="text" id="suffix" name="suffix"></div>
+    </div>
+</section>
+   <div>
+    <button type="button">Submit</button><button type="button">Reset</button>
+   </div>
+    </form>
     </div>
     <div class="Foster_header">
     

@@ -41,7 +41,7 @@
 }
 
 .introduction_header{
-display: block;
+display: flexbox;
 border-bottom: 5px solid lightblue;
 width:100%;
 padding-bottom: 10px;

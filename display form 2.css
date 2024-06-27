@@ -1,10 +1,23 @@
-.name_form{
-    display:inline-flexbox
-
+.container{
+    display:flex;
+    justify-content: space-evenly;
+    border: solid grey;
 }
-.name_title{
-    display:inline-flexbox
+.title{
+    width:150px;
+    height:150px;
+    background-color: red;
+    text-align: center;
+}   
+.f_name{
+    width: 150px;
+    height:150px;
+    background-color: blue;
+    text-align: center;
 }
-.form_f_name{
-    display: inline-flexbox;
+.m_name{
+    width:150px;
+    height:150px;
+    background-color: green;
+    text-align: center;
 }

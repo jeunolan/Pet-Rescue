@@ -7,6 +7,7 @@
     <link rel = "stylesheet" href="Foster Display.css">
     <link rel = "stylesheet" href="header.css">
     <link rel = "stylesheet" href="sidebar.css">
+    <link rel = "stylesheet" href="display form 2.css">
     <title>Pet Rescue Foster <Menu></Menu></title>
 </head>
 <body style="padding-top: 60px; padding-left:50px;">
@@ -32,7 +33,8 @@
                                     be invited to a volunteer interview. When you submit this form, you will receive
                                     an email asking to verify your account.
         </div>
-   
+ <br>
+ <br>  
    
    
    
@@ -40,74 +42,89 @@
    
    
    
-   
-   <div style="height: 300px;
-   background-color: blue;">
+<form>   
+   <div style=" background-color: blue; display: inline-flexbox; justify-content: center;">
    <!-- create form with user input--> 
    <form action="results.html" method="get">
-    <div>    
-
-    
-    
-    <section class="section_bordered">
-        
-        <h3>Name</h3> 
-        
-        <div class="form-group name">
-            <div style="display:block;">    
-                <label for ="title" >Title</label>
+    <div class = "container">
+        <div class="title" id="title">    
+            <!--Create title block-->
+            <div>
+                <label id="label_title" for="label_title" style="font-size: 20px;">Title</label>
             </div>
-            <div style="display:flexbox;">
-                <select name="title" id="title"><
+            <div>    
+                <select name="titleOPTION" id="titleOPTION" style="height: 20px; width:75%">
                 <optgroup>
                     <option value="">Select...</option>
-                    <option value="Mr">Mr.</option>
-                    <option value="Ms">Ms.</option>
-                    <option value="Mrs">Mrs.</option>
+                                <option value="Mr">Mr.</option>
+                                <option value="Ms">Ms.</option>
+                                <option value="Mrs">Mrs.</option>
                 </optgroup>
                 </select>
-            </div>
+            </div><!--end of title block-->
         </div>    
-    </div>
-
-    <div>
-    <!--display first name and middle on the same line-->
-    <div style="display:inline-block;">
-
-        <!-- dispay label on top of textbox-->
-        <div style="display: block;">
-            <label for="f_name"> First Name</label>
-        </div>
-        <div sytle="display:block;">
-            <input type ="text" id = "f_name" name="First_Name" style ="height:20px; margin-right:50px;" required>
-        </div>
-    </div>    
-
-        <!-- display label on top of text box-->
-    <div style="display:inline-block;">    
-        <div style ="display:block;">
-            <label for="m_initial"> Middle Initial</label>
-        </div>
-        <div style="display:block;">
-            <input type = "text" id="m_initial" name = "Middle_initial">
-        </div>
-
-    </div>
-            <div style="display: block">
-                <label for="l_name">Last Name</label>
+        <div class="f_name" id="f_name">    
+            <!--Create title block-->
+            <div>
+                <label id="labelFNAME" for="textFNAME" style="font-size: 20px;">First Name</label>
             </div>
-            <div style="display:block">
-                <input type="text" id="l_name" name ="last_name" required>
+            <div> 
+                <input type="textbox" id="textFNAME" name="textFNAME" style="width:97%" ></input>
+                <!--   
+                <select name="titleOPTION" id="titleOPTION" style="height: 20px; width:100%">
+                <optgroup>
+                    <option value="">Select...</option>
+                                <option value="Mr">Mr.</option>
+                                <option value="Ms">Ms.</option>
+                                <option value="Mrs">Mrs.</option>
+                </optgroup>
+                </select> -->
+            </div><!--end of title block-->
+        </div>
+        <div class="m_name" id="m_name">    
+            <!--Create title block-->
+            <div>
+                <label id="label_title" for="label_title" style="font-size: 20px;">Middle Name</label>
             </div>
-        <div style="display: inline-block;">
-            <label for="suffix">Suffix</label>
-            <input type="text" id="suffix" name="suffix"></div>
-    </div>
-</section>
-   <div>
-    <button type="button">Submit</button><button type="button">Reset</button>
-   </div>
-    </form>
+            <div>   
+                <input type="textbox" id="textMNAME" style="width:97%"></input>
+            </div>     
+            </div><!--end of title block-->
+        </div>    
+        
+        </div>
+        <br>
+        <div class = "container2">
+            
+            <div class="f_name" id="f_name">    
+                <!--Create title block-->
+                <div>
+                    <label id="labelFNAME" for="textFNAME" style="font-size: 20px;">Last Name</label>
+                </div>
+                <div> 
+                    <input type="textbox" id="textFNAME" name="textFNAME" style="width:97%"></input>
+                </div><!--end of title block-->
+            </div>
+            
+                <div class="title" id="title">    
+                    <!--Create title block-->
+                    <div>
+                        <label id="label_title" for="label_title" style="font-size: 20px;">Title</label>
+                    </div>
+                    <div>    
+                        <select name="titleOPTION" id="titleOPTION" style="height: 20px; width:100%">
+                        <optgroup>
+                            <option value="">Select...</option>
+                                        <option value="Mr">Mr.</option>
+                                        <option value="Ms">Ms.</option>
+                                        <option value="Mrs">Mrs.</option>
+                        </optgroup>
+                        </select>
+                    </div><!--end of title block-->
+                </div>    
+            </div>    
+            
+            </div>
     </div>
     <div class="Foster_header">
     
@@ -116,78 +133,7 @@
     
     </div>
     </div>
-    <!--
-    <div class="main_block">
-        
-        
-    
-            <div class="display_first_name">                    
-                <p>
-                    <label class="Foster_label">First Name</label>
-                    <input name="First_Name">
-                </p>
-                <p>
-                    <label class="Foster_label">Last Name</label>
-                    <input name="last_name">
-        
-                </p>
-                <p>
-                    <label class="Foster_label">Middle Initial</label>
-                    <input name="Middle_Name">
-                </p>
-           
-                <p>
-                    <label class="Foster_label">Address 1</label>
-                    <input name="address1"></label>
-                </p>
-            
-                <p>
-                    <label class="Foster_label">Address 2</label>
-                    <input name="address2"></label>
-                </p>
-
-                <p>
-                    <label class="Foster_label">City<input name="city"></label>
-                </p>
-                <p>    
-                    <label class="Foster_label">Postal Code<input name="postal_code"></label><br>
-                </p>
-                <p>
-                    <label class="Foster_label">Email<input name="email"></label><br>
-                </p>
-                <p>    
-                    <label class="Foster_label">Phone Number<input name="phone_number"></label><br>
-                </p>
-                <p>
-                    <button>Submit</button><br>
-
-                </p>
-            </div>
-        
-        
-        </div>
-
-        </div>
-        </div> 
-    <div class="image_block">1234</div>
-    <div class="image_block">1234</div>
-    </div>      
--->
-              
+<a href="#" class="btn"><span>Submit</span></a>
+</form>              
 </body>
 </html>       
-            
-        <!--
-        
-        
-        
-            <div>
-           
-        </div>
-        
-    </form>
-</div>
-</div>
-</body>
-
-</html>
